@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello World</title>
+    <link rel="stylesheet" href="java.css">
+</head>
+
+<body>
+
+<div class="sidenav">
+<div id="bg"></div>
+  <a href="java.html">Java Intro</a>
+  <a href="helloworld.html">Hello World</a>
+  <a href="variables.html">Variables</a>
+ 
+
+</div>
+
+<div class="main">
+  <h1>Hello, World!</h1>
+  <br>
+  <p>If you made it here, I'm going to assume two things. One, you now have a working IDE and are not using notepad and two, I finally figured out how website links work (I'm learning how to make a website as we go, Ok)
+    The starting point to learning how to code in any language, is learning how to greet the world. To do this, we will make a very simple program that will simply output the statement "Hello, World!". Simple, right?
+    </p>
+    <br>
+    <p>First, to create any program in Java, you must begin by declaring a class. What is a class? I said we're keeping it simple for now, but don't worry we will get more into classes later. For now, you can just think of it as a sort of blueprint, or template.
+      To do this, we'll start off by typing our first bit of code
+    </p>
+    <br>
+    <pre><code>public class HelloWorld {
+      }
+    </code></pre>
+    <p>This is how you delcare a class named HelloWorld. Note the capitalization used - it is customary in Java to use camelcase when declaring a class name. You won't get an error by
+      using Helloworld or helloWorld instead, but it is more "correct" to use camelcase when declaring class names. Also, note the use of the brackets {} - this is where the rest of the code for the 
+      program will go. Next, you need to know about the main method. The main method is treated as the starting point for a program, this is something you will need to learn and remember as it will be used
+      in every program you ever create. Whether you write it 50 times, say it aloud 100 times, or whatever method you have for memorizing, <b>this is important</b>.
+    </p>
+    <br>
+    <pre><code>public static void main(String [] args){
+      }</code></pre>
+    <br>
+    <p>Unlike with class declaration, case sensitivity is extremely important in the main method and if not followed exactly, your program will have errors. Now, if you were following correctly your code should look like this.</p>
+    <br>
+    <pre><code>public class HelloWorld {
+      public static void main (String [] args){
+      }
+    }
+    </code></pre>
+
+    <p>Make sure that your main method is within the brackets of the class declaration, or else your program will not work properly. Lastly, we need to put in our output statement.
+      In Java, to output to the console we use this line
+    </p>
+    <br>
+    <code>System.out.print("");</code>
+    <br><br>
+    <p>Now, there is a few things we need to dissect about this line. First, like most things will be in Java, it is case sensitive. Second, what you want to output will go between the two apostrophes (""). Lastly, unlike with our class delcartion and main method, we do not use brackets at the end 
+      of the statement, but rather we use a semicolon (;). This will make more sense the more practice you have, but just trust me for now. With these things in mind, you should be able to finish your program so that it is able
+      to output the statement "Hello, World!" to the screen. Below is how your finished first program should look.
+    </p>
+    <pre><code>public class HelloWorld {
+      public static void main (String [] args){
+        System.out.print("Hello, World!");
+      }
+    }
+    </code></pre>
+
+    <p>If you were successfully able to greet the world, congratulations! You are now a Java developer. Simple, right? Now let's move onto the fun stuff.</p>
+    <br><br><br>
+  </div>
+   
+</body>
+
+<script src="particles.min.js"></script>
+<script src="java.js"></script>
+
+</html> 
